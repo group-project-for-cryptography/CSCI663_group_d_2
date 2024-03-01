@@ -13,3 +13,16 @@
 •	 Galois field arithmetic is used in most layers
 
 ![スクリーンショット 2024-03-01 15 03 16](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/751b03b1-5e45-47e7-a65b-87f34e227262)
+
+◾️ A brief description of the layers: \
+Key Addition layer \
+Byte Substitution layer (S-Box) \
+Diffusion layer \
+-	The ShiftRows layer \ 
+-	The MixColumn layer \
+
+
+## Note for Code
+AES operates on blocks of fixed size (128 bits or 16 bytes), and the input data must be a multiple of this block size.
+
+An error is often caused by the length of the plaintext not being a multiple of 16. To fix this, we pad the plaintext to the appropriate length. We use PKCS7 padding, which is a commonly used padding scheme. 
