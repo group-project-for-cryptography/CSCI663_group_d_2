@@ -15,11 +15,11 @@
 ![スクリーンショット 2024-03-01 15 03 16](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/751b03b1-5e45-47e7-a65b-87f34e227262)
 
 ◾️ A brief description of the layers: \
-Key Addition layer \
-Byte Substitution layer (S-Box) \
-Diffusion layer 
--	The ShiftRows layer 
--	The MixColumn layer 
+Key Addition layer ...\
+Byte Substitution layer (S-Box) ...\
+Diffusion layer ...
+-	The ShiftRows layer ...
+-	The MixColumn layer ...
 
 
 ## Note for Code
