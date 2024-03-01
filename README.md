@@ -12,4 +12,4 @@
 \
 •	 Galois field arithmetic is used in most layers
 
-![スクリーンショット 2024-03-01 14 59 47](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/5d66455e-f9be-4d85-a428-584a7666fb8c)
+![スクリーンショット 2024-03-01 15 03 16](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/751b03b1-5e45-47e7-a65b-87f34e227262)
