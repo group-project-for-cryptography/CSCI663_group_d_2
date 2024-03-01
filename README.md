@@ -18,9 +18,9 @@
 - A brief description of the layers: \
 Key Addition layer ...\
 Byte Substitution layer (S-Box) ...\
-Diffusion layer ...
-•	The ShiftRows layer ...
-•	The MixColumn layer ...
+Diffusion layer ...\
+•	The ShiftRows layer ...\
+•	The MixColumn layer ...\
 
 
 ## Note for Code
