@@ -1,7 +1,7 @@
 # Implementation of AES and Diffie-Hellman key exchange in group projects
 
 ## Overview
-”Implement DES, AES, RSA, and Key exchange algorithms to cryptosystems”.
+”Implement DES, AES, RSA, and Key exchange algorithms to cryptosystems”. And we chose AES and the Diffie–Hellman key exchange.
 
 ## Descriptions
 ◾️ AES Algorithm\
