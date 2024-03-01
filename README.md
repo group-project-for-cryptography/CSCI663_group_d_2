@@ -3,7 +3,7 @@
 ## Overview
 
 ## Descriptions
-🔳 AES Algorithm\
+◾️ AES Algorithm\
 •	 block cipher with 128 bit block size 
 \
 •	 three key lengths must be supported: 128, 192 and 256 bit 
@@ -12,4 +12,3 @@
 \
 •	 Galois field arithmetic is used in most layers
 
-![Uploading スクリーンショット 2024-03-01 14.59.47.png…]()
