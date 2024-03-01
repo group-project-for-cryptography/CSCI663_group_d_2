@@ -20,11 +20,16 @@ Key Addition layer ...\
 Byte Substitution layer (S-Box) ...\
 Diffusion layer ...\
 •	The ShiftRows layer ...\
-•	The MixColumn layer ...
+•	The MixColumn layer ...\
 
+◾️ The Diffie–Hellman key exchange\
+In preparing.
 
 ## Note for Code
 ◾️ AES\
 **AES operates on blocks of fixed size (128 bits or 16 bytes), and the input data must be a multiple of this block size.**
 
-An error is often caused by the length of the plaintext not being a multiple of 16. To fix this, we pad the plaintext to the appropriate length. We use PKCS7 padding, which is a commonly used padding scheme. 
+An error is often caused by the length of the plaintext not being a multiple of 16. To fix this, we pad the plaintext to the appropriate length. We use PKCS7 padding, which is a commonly used padding scheme. \
+
+◾️ The Diffie–Hellman key exchange\
+In preparing.
