@@ -10,6 +10,7 @@ class AESCipher:
         # Use PKCS7 padding to ensure the plaintext length is a multiple of the block size
         padder = padding.PKCS7(128).padder()
         padded_plaintext = padder.update(plaintext) + padder.finalize()
+
         # Perform AES encryption on the padded plaintext using the first round key
         return aes_encrypt(self.key[0], padded_plaintext)
 
@@ -17,6 +18,7 @@ class AESCipher:
         # Perform AES decryption on the ciphertext using the first round key
         unpadder = padding.PKCS7(128).unpadder()
         decrypted_text = aes_decrypt(self.key[0], ciphertext)
+
         # Use PKCS7 unpadding to remove the padding after decryption
         return unpadder.update(decrypted_text) + unpadder.finalize()
 
