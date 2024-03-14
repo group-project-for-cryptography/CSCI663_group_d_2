@@ -32,6 +32,7 @@ In preparing.
 An error is often caused by the length of the plaintext not being a multiple of 16. To fix this, we pad the plaintext to the appropriate length. We use PKCS7 padding, which is a commonly used padding scheme. 
 
 (Intending to add the explanation for “hazmat” library.)
-</br>
+<br></br>
+
 ◾️ The Diffie–Hellman key exchange\
 In preparing.
