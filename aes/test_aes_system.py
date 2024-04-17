@@ -1,6 +1,6 @@
 import unittest
-from aes import AESCipher
-from aes_utils import key_expansion, sub_bytes
+from aes.aes import AESCipher
+
 
 class TestAESSystem(unittest.TestCase):
     def test_key_expansion(self):
