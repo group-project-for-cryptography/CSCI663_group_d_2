@@ -18,11 +18,17 @@ class TestAESCipher(unittest.TestCase):
         padder = padding.PKCS7(128).padder()
         padded_plaintext = padder.update(self.plaintext) + padder.finalize()
 
-        ciphertext = self.aes_cipher.encrypt(self.plaintext)
+        # Encrypt the padded plaintext
+        ciphertext = self.aes_cipher.encrypt(padded_plaintext)
 
+        # Decrypt the ciphertext
         decrypted_text = self.aes_cipher.decrypt(ciphertext)
 
-        self.assertEqual(decrypted_text, padded_plaintext)
+        # Remove padding from decrypted text
+        unpadder = padding.PKCS7(128).unpadder()
+        unpadded_text = unpadder.update(decrypted_text) + unpadder.finalize()
+
+        self.assertEqual(unpadded_text, self.plaintext)
 
 if __name__ == '__main__':
     unittest.main()
