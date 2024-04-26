@@ -18,11 +18,16 @@
 ![スクリーンショット 2024-03-01 15 03 16](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/751b03b1-5e45-47e7-a65b-87f34e227262)
 
 - A brief description of the layers: \
-  Key Addition layer ...\
-  Byte Substitution layer (S-Box) ...\
-  Diffusion layer ...\
-  • The ShiftRows layer ...\
-  • The MixColumn layer ...
+1.	Key Additional Layer [linear].
+　　　XOR addition of subkeys for each round generated from the input key. 
+2. Byte Substitution Layer (S-BoX) [nonlinear].
+　　　Performs a Galois nonlinear operation on the input data.
+　Diffusion Layer [linear]
+　　3.1 ShiftRows Layer
+　　　　　Shifts data byte by byte.
+　　3.2 MixColumn Layer
+　　　　　Performs matrix operation on Galois field.
+
 
 ◾️ The Diffie–Hellman key exchange\
 In preparing.
