@@ -22,7 +22,7 @@
 　　　XOR addition of subkeys for each round generated from the input key. \
 2. **Byte Substitution Layer (S-BoX) [nonlinear].**\
 　　　Performs a Galois nonlinear operation on the input data.\
-　Diffusion Layer [linear]\
+Diffusion Layer [linear]\
 　　3.1 **ShiftRows Layer**\
 　　　　　Shifts data byte by byte.\
 　　3.2 **MixColumn Layer**\
