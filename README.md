@@ -29,7 +29,7 @@ Diffusion Layer [linear]\
 　　　　　Performs matrix operation on Galois field.
 
 The actual order of processing is \
-2
+2\
 ↓\
 3.1\
 ↓\
