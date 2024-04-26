@@ -41,6 +41,8 @@ An error is often caused by the length of the plaintext not being a multiple of 
 
 [PKCS7](https://cryptography.io/en/latest/hazmat/primitives/padding/#cryptography.hazmat.primitives.padding.PKCS7.unpadder)
 
+When calling `padder()` or `unpadder()` the result will conform to the `PaddingContext` interface. You can then call `update(data)` with data until you have fed everything into the context. Once that is done call `finalize()` to finish the operation and obtain the remainder of the data.
+
 **Hazmat / Hazardous Materials**
 
 The “hazmat” or “Hazardous Materials” layer is one of two levels that derives from the cryptography library, and it is often regarded as low-level cryptographic primitives, which requires users to have a deep understanding of cryptographic concepts and beware of its potential dangers of usage. Inside the hazmat layer, there is another layer called primitives, which will be used for the AES implementation. It offers many useful built-in modules that will assist our project.
