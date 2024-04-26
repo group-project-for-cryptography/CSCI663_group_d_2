@@ -19,14 +19,14 @@
 
 - A brief description of the layers: 
 1.	**Key Additional Layer [linear].**\
-　　　XOR addition of subkeys for each round generated from the input key. \
+　　　XOR addition of subkeys for each round generated from the input key. 
 2. **Byte Substitution Layer (S-BoX) [nonlinear].**\
 　　　Performs a Galois nonlinear operation on the input data.\
 Diffusion Layer [linear]\
 　　3.1 **ShiftRows Layer**\
 　　　　　Shifts data byte by byte.\
 　　3.2 **MixColumn Layer**\
-　　　　　Performs matrix operation on Galois field.\
+　　　　　Performs matrix operation on Galois field.
 
 
 ◾️ The Diffie–Hellman key exchange\
