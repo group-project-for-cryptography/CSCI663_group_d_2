@@ -29,13 +29,13 @@ Diffusion Layer [linear]\
 　　　　　Performs matrix operation on Galois field.
 
 The actual order of processing is \
-2\
+**2**\
 ↓\
-3.1\
+**3.1**\
 ↓\
-3.2\
+**3.2**\
 ↓\
-1
+**1**
 
 ![スクリーンショット 2024-04-26 19 48 48](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/da29fd7b-8f60-4de4-a993-1eec9060c9d4)
 
