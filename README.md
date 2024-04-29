@@ -40,7 +40,19 @@ The actual order of processing is \
 ![スクリーンショット 2024-04-26 19 48 48](https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/58361623/da29fd7b-8f60-4de4-a993-1eec9060c9d4)
 
 ◾️ The Diffie–Hellman key exchange\
-In preparing.
+• provides a practical solution to the key distribution problem by allowing two parties to derive a common secret key by communicating over an insecure channel.
+\
+• it consists of two protocols, the set-up protocol and the main protocol, which performs the actual key exchange.
+\
+ * The set-up protocol consists of the following steps:
+   <img width="1294" alt="Screenshot 2024-04-29 at 8 40 17 in the morning" src="https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/100827012/6c34dfcf-30a7-488c-8c3b-fd7aaec39480">
+     - Bob and Alice publicly choose p and α.
+  \
+ * The key-exchange protocol consists of the following steps:
+   <img width="1283" alt="Screenshot 2024-04-29 at 8 41 24 in the morning" src="https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/100827012/30db3d36-671b-4aa5-ac9a-0eef31bed64c">
+     - Bob and Alice then choose their own private key *a* and *b* respectively. These private keys enable them to           generate a joint secret key.
+     - In these ways, they securely send each other encrypted message and decrypt it with their own private key.
+
 
 ## Note for Code
 
