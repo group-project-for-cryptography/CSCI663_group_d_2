@@ -47,7 +47,7 @@ The actual order of processing is \
  * The set-up protocol consists of the following steps:
    <img width="1294" alt="Screenshot 2024-04-29 at 8 40 17 in the morning" src="https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/100827012/6c34dfcf-30a7-488c-8c3b-fd7aaec39480">
      - Bob and Alice publicly choose p and α.
-  \
+       
  * The key-exchange protocol consists of the following steps:
    <img width="1283" alt="Screenshot 2024-04-29 at 8 41 24 in the morning" src="https://github.com/group-project-for-cryptography/CSCI663_group_d_2/assets/100827012/30db3d36-671b-4aa5-ac9a-0eef31bed64c">
      - Bob and Alice then choose their own private key *a* and *b* respectively. These private keys enable them to           generate a joint secret key.
@@ -74,4 +74,6 @@ When calling `padder()` or `unpadder()` the result will conform to the `PaddingC
 The “hazmat” or “Hazardous Materials” layer is one of two levels that derives from the cryptography library, and it is often regarded as low-level cryptographic primitives, which requires users to have a deep understanding of cryptographic concepts and beware of its potential dangers of usage. Inside the hazmat layer, there is another layer called primitives, which will be used for the AES implementation. It offers many useful built-in modules that will assist our project.
 
 ◾️ The Diffie–Hellman key exchange\
-In preparing.
+The basic operation of DHKE is not secured enough against active attacks, mainly man-in-the-middle attack. The key vulnerability is k_{AB}. An attacker Oscar could retrieve Alice or Bob's pirvate key by solving the discrete logarithm problem (DLP). 
+
+So, to counter this issue, we have to choose p large enough so that the index-calculus method cannot compute the DLP. Hence, in our code implementation we will be using 1024 bits for the prime number generator.
