@@ -74,7 +74,13 @@ When calling `padder()` or `unpadder()` the result will conform to the `PaddingC
 The “hazmat” or “Hazardous Materials” layer is one of two levels that derives from the cryptography library, and it is often regarded as low-level cryptographic primitives, which requires users to have a deep understanding of cryptographic concepts and beware of its potential dangers of usage. Inside the hazmat layer, there is another layer called primitives, which will be used for the AES implementation. It offers many useful built-in modules that will assist our project.
 
 ◾️ The Diffie–Hellman key exchange
+There are 5 main functions in the program, below are the brief description:
 
-   The basic operation of DHKE is not secured enough against active attacks, mainly man-in-the-middle attack. The key vulnerability is k_{AB}. An attacker Oscar could retrieve Alice or Bob's pirvate key by solving the discrete logarithm problem (DLP). 
+   - The fast_raise_power_books(x, n, p) function calculates the modular exponentiation of x raised to the power of n modulo p using the fast exponentiation algorithm.
+   - The isPrime(n) function returns true if n is prime, else false.
+   - The generatePrime(n) function generates a prime number with n digits. In our case, it is 3 digits.
+   - The generateBase(p) function generates a base g such that 2 ≤ g < p.
+   - The submit_callback(input_entry, input_entry1) function is called when the submit button is clicked, It reads the input from two entry fields representing Alice's and Bob's keys, generates a prime number p and a base g, computes the public keys for Alice and Bob, and finally computes the shared secret keys for both Alice and Bob using the Diffie-Hellman key exchange algorithm.
 
-   So, to counter this issue, we have to choose p large enough so that the index-calculus method cannot compute the DLP. Hence, in our code implementation we will be using 1024 bits for the prime number generator.
+
+   
